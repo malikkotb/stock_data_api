@@ -1,17 +1,17 @@
 const { fetchPrice } = require("../utils");
-
+const path = require('path');
 // Variables
 const baseURL = (stock) =>
   `https://finance.yahoo.com/quote/${stock}/history?p=${stock}`;
 
 // HANDLERS
 async function getHome(req, res) {
-  res.sendStatus(200).send({ message: "Thanks for trying our API!" });
+  res.status(200).send({ message: "Thanks for trying our API!" });
 }
 
 async function getStockPrices(req, res) {
   const { stock } = req.query;
-  console.log("Stock Ticker: " + stock);
+  console.log("Stock: " + stock);
   if (!stock) {
     return res.sendStatus(403);
   }
@@ -22,8 +22,9 @@ async function getStockPrices(req, res) {
     const stockRes = await fetch(stockDataUrl);
     const data = await stockRes.text();
     const prices = fetchPrice(data); //data is the html
-    console.log(prices);
-    res.status(200).send({ prices });
+    // console.log(prices);
+    return prices;
+    // res.status(200).send({ prices });
   } catch (error) {
     console.log("There was an error", error);
     res.sendStatus(500);

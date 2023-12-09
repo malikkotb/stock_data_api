@@ -1,0 +1,9 @@
+html
+  head
+    title= "Stock API"
+  body(style='text-align: center; padding: 100px; background-color: #edfdf3; color: #2f603e;')
+    h1= stock
+    ul(style='list-style-type: none; padding: 0; max-height: 600px; overflow-y: auto; margin: 0 auto;')
+      each price in prices
+        li(style='padding: 10px; background-color: #edfdf3; border-bottom: 1px solid #8baff1; font-size: 18px; color: #2f603e;')
+          = price

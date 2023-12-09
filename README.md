@@ -15,6 +15,11 @@ Replace `[name_of_stock]` with the 4-letter keyword associated with the stock yo
 ### Example:
 https://stock-api-k98u.onrender.com/api/stock?stock=AAPL&password=[password]
 
+## Screenshots
+
+![Screenshot 2023-12-09 at 18 52 03](https://github.com/malikkotb/stock_data_api/assets/50169361/bed6f0c9-ec91-4df7-ab72-aee80b10295a)
+![Screenshot 2023-12-09 at 18 52 41](https://github.com/malikkotb/stock_data_api/assets/50169361/e809bb23-77ac-4521-9506-98f6ce228fbf)
+
 
 ## Getting Started
 

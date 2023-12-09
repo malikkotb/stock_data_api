@@ -1,0 +1,17 @@
+# client emulator
+
+###
+GET http://localhost:5353/api/stock?stock=pltr&password=1234
+
+###
+POST http://localhost:5353/api/test
+Content-Type: application/json
+
+{
+    "message": "hello backend"
+}
+
+###
+GET http://localhost:5353/api/testParams/123
+
+###

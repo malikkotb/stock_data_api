@@ -18,7 +18,6 @@ app.use(require("cors")()); // allows cross origin requests
 // app.use(middleWareInterceptor) // and now every route would be forbidden, unless you give the password as a query param
 
 // config the host
-// https://dashboard.render.com/web/srv-clq1p9ggqk6s738nspf0/deploys/dep-clq30cie9h4c73ahl3u0
 
 
 // ROUTES = api endpoints

@@ -8,7 +8,7 @@ const port = 5353;
 app.use(express.json()); // allows us to retrieve json that may come in the form of a post request
 app.use(require("cors")()); // allows cross origin requests
 // to authenticate all of your routes, add:
-app.use(middleWareInterceptor) // and now every route would be forbidden, unless you give the password as a query param
+// app.use(middleWareInterceptor) // and now every route would be forbidden, unless you give the password as a query param
 
 // ROUTES = api endpoints
 // home route

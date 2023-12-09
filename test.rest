@@ -15,3 +15,5 @@ Content-Type: application/json
 GET http://localhost:5353/api/testParams/123
 
 ###
+
+GET https://stock-api-k98u.onrender.com/api/stock?stock=pltr&password=1234
